@@ -1,0 +1,221 @@
+
+##### 1.What are the two values of the Boolean data type? How do you write them?
+
+
+A variable of the primitive data type boolean can have two values: true and false
+   
+  zero_int = 0
+bool(zero_int)
+False
+
+pos_int = 1
+ bool(pos_int)
+True
+
+neg_flt = -5.1
+ bool(neg_flt)
+True
+
+
+
+### 2. What are the three different types of Boolean operators?
+
+
+    AND, 
+    OR, 
+    NOT,
+    TRUE,
+    FALSE
+    
+    
+    
+#### 3 . Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean values for the operator and what it evaluate ).
+
+ TRUE,FALSE,NOT,AND,OR
+
+T= True,F = False
+      
+A      B    A and B
+T      T       T
+T      F       F
+F      T       F
+F      F       F
+   
+A      B    A OR B
+T      T     T
+T      F     T
+F      T     T
+F      F     F
+
+
+
+####  4. What are the values of the following expressions?
+
+(5 > 4) and (3 == 5)
+not (5 > 4)
+(5 > 4) or (3 == 5)
+not ((5 > 4) or (3 == 5))
+(True and True) and (True == False)
+(not False) or (not True)
+True
+
+
+
+#### 5. What are the six comparison operators?
+
+Comparison operators — operators that compare values and return true or false .
+
+The operators include: > , < , >= , <= , === , and !== . 
+    
+    
+    
+    
+### 6.. How do you tell the difference between the equal to and assignment operators?
+Describe a condition and when you would use one.
+
+"="   it is an assignment operator 
+      it is used to assingning value to a variable
+    
+    
+"=="  It is a relational or comparison operator.
+      It is used for comparing two values. It returns 1 if both the values are equal otherwise returns 0.
+    
+    
+    
+###### 7. Identify the three blocks in this code:
+
+
+spam = 0
+if spam == 10:
+    print('eggs')
+if spam > 5:
+    print('bacon')
+else:
+    print('ham')
+print('spam')
+print('spam')
+ham
+spam
+spam
+
+
+
+### 8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam,and prints Greetings! if anything else is stored in spam.
+
+
+spam = input()
+
+if spam == 1:
+    print('Hello')
+elif spam == 2:
+    print('Howdy')
+else:
+    print('Greetings!')
+    
+    
+    
+##9.If your programme is stuck in an endless loop, what keys you’ll press?
+
+press CTRL+ c
+
+
+
+### 10. How can you tell the difference between break and continue?
+
+Break
+'break' stops the continuation of loop.
+'break' can be used with 'switch', 'label'.
+
+continue
+'continue' do not stops the continuation of loop, it only stops the current iteration.
+'continue' can not be executed with 'switch' and 'labels'.
+
+
+
+### 11.  In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+
+# range(stop)
+# When user call range() with one argument, user will get a series of numbers that starts at 0 and includes every whole number up to, 
+#but not including, the number that user have provided as the stop.
+
+for i in range(10):
+  print(i)
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+# range(start, stop)
+# When user call range() with two arguments, user get to decide not only where the series of numbers stops but also where it starts, so user don’t have to start at 0 all the time. 
+#User can use range() to generate a series of numbers from X to Y using a range(X, Y).
+
+for i in range(0,10):
+    print(i)
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+# range(start, stop,step)
+#When user call range() with three arguments, user can choose not only where the series of numbers will start and stop but also how big the difference will be between one number and the next. 
+#If user don’t provide a step, then range() will automatically behave as if the step is 1.
+
+for i in range(0,10,1):
+    print(i)
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+
+### 12. Write a short program that prints the numbers 1 to 10 using a for loop.
+#     Then write an equivalent program that prints the numbers 1 to 10 using a while loop
+for i in range(1,11):
+     print(i)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+# while loop
+i=1
+while i<=10:
+    print(i)
+    i+=1
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+
+
+###13. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+
